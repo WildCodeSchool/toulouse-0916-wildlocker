@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="fr.wildcodeschool.apprentie.lockthedoor"
+    package="fr.wildcodeschool.apprenti.lockthedoor"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="fr.wildcodeschool.apprentie.lockthedoor.MainActivity"
+            android:name="fr.wildcodeschool.apprenti.lockthedoor.MainActivity"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="fr.wildcodeschool.apprentie.lockthedoor.SecondActivity" />
+        <activity android:name="fr.wildcodeschool.apprenti.lockthedoor.SecondActivity" />
     </application>
 
 </manifest>
