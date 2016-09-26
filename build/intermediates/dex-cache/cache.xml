@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_22263eb5e45a2bce6951d31486414412bb711597/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="28da088ef1cf6f74f1783887f1db2b6e3a9bbef8">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_9a46c89f6866a8aba99f32624a89a6fbb0832858/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_80d2a3fbab18894f9996c0431dd6ac135e259d4b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="b4cfd3da4584c0d7b070e7a201afc0a10baac839">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_be1e29f2c2a92fcd1495d03bfef5403cc67e6839/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_d2c27cabe93bc196c5bfbcd48db50b1ef4db3b1c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_a45d118458c4881789f11665fff5639ae4e5cc65/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_cbf178ed48edcf2eccc5c6b5ecb255ec90c7719d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_706ad72014a0001d62bff8c4b78a0d3012441305/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_95adbe6a8a02098b14c9d253fcb5df69aa5a5f5d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_c5392a7f5824a1facd3364e68dfe8f4f6c283d0b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_0ede0a8c3432cd00ea0f69d11ed5ac339c09f062/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_dba586c2f3c0707c1f028ed0efd56de35169772f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_31e5692ef0aa5d423ea84e9d8079c9f5607c3a15/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_7847d71d0eaefd1f4ebaabf612606c31b33dd12e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_4e099f130dbf175b95e8664c19277255b2d662b8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_cab01ad6cc692e9f6a672052be764eeae174f423/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/Shooty31/AndroidStudioProjects/LockTheDoor/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_f0b6a4f522b62ffcaf34fc6fd38537b985610c7e/classes.dex" />
+    </item>
+
+</items>
