@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1062011014241",
+    "firebase_url": "https://bdddoorapp.firebaseio.com",
+    "project_id": "bdddoorapp",
+    "storage_bucket": "bdddoorapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062011014241:android:11f141cab87928d8",
+        "android_client_info": {
+          "package_name": "fr.wildcodeschool.apprenti.lockthedoor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062011014241-h6ia7ltt5mmpdddm3vgdspvrsrem3dq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhjHF4Nwh9HI51B-7AviQXOuO0q8NIekM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
