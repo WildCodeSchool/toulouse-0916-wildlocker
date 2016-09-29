@@ -8,58 +8,11 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#FFF"
-    tools:context="fr.wildcodeschool.apprenti.toulouse-0916-wildlocker.MainActivity">
+    tools:context="fr.wildcodeschool.apprenti.lockthedoor.MainActivity">
 
 
-                <Button
-                    android:layout_width="120dp"
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="LOCK"
-                    android:id="@+id/button"
-                    android:layout_marginLeft="30dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentStart="true"
-                    android:background="#FF0005"
-                    android:textColor="#FFFEFE"/>
-
-                <Button
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:text="UNLOCK"
-                    android:id="@+id/button2"
-                    android:layout_marginRight="30dp"
-                    android:layout_alignTop="@+id/button"
-                    android:layout_alignParentEnd="true"
-                    android:textColor="#FFFEFE"
-                    android:background="#00BF03"/>
-
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:src="@drawable/logo_fondblanc"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Smart Door"
-        android:textSize="50dp"
-        android:id="@+id/textView"
-        android:layout_marginTop="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Wild Code School"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"/>
+                    android:text="Hello World !"/>
 </RelativeLayout>

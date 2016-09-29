@@ -20,18 +20,20 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
-
+    private FirebaseAuth mFirebaseAuth;
     // récupération de la Fire base
     private DatabaseReference root = FirebaseDatabase.getInstance().getReference().getRoot();
     // Récupération de la table
     private DatabaseReference rootTable = FirebaseDatabase.getInstance().getReference().child("users");
     //écouté les donné de ma base
     private static final String TAG = "LTD-Main";
-    private Intent intent;
+    private Intent secondActivity, authActivity;
     public FirebaseAuth.AuthStateListener mAuthListener;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        mFirebaseAuth = FirebaseAuth.getInstance();
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -40,17 +42,19 @@ public class MainActivity extends AppCompatActivity {
                 if (user != null) {
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-                    intent = new Intent(MainActivity.this,AuthActivity.class);
-                    startActivity(intent);
+                    secondActivity = new Intent(MainActivity.this,SecondActivity.class);
+                    startActivity(secondActivity);
                 } else {
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");
-                    intent = new Intent(MainActivity.this,SecondActivity.class);
-                    startActivity(intent);
+                    authActivity = new Intent(MainActivity.this,AuthActivity.class);
+                    startActivity(authActivity);
                 }
                 // ...
             }
         };
+
+        mAuthListener.onAuthStateChanged(mFirebaseAuth);
     }
 }
 
