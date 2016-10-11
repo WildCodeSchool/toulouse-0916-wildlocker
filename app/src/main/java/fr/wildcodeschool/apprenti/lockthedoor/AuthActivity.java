@@ -21,17 +21,18 @@ import com.google.firebase.auth.FirebaseUser;
 /**
  * Created by apprenti on 28/09/16.
  */
-public class AuthActivity extends AppCompatActivity{
+public class AuthActivity extends AppCompatActivity {
 
- //   public final static String EXTRA_LOGIN = "user_login"; //On déclare les deux données de log */
-   // public final static String EXTRA_PASSWORD = "user_password";
+// On déclare nos variable !
     private static final String TAG = "LTD-Auth";
+    public FirebaseAuth.AuthStateListener mAuthListener;
+    private FirebaseAuth mFirebaseAuth;
 
     public EditText editLogin;
     public EditText editPass;
     public Button loginButton;
     private Intent intent;
-    private FirebaseAuth mAuth;
+
     public String login;
     public String pass;
 
@@ -39,25 +40,38 @@ public class AuthActivity extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.log_activity);
+        // on récupére nos utilisateur stocké dans "Auth" de firebase
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = mFirebaseAuth.getCurrentUser();
 
-        editLogin = (EditText) findViewById(R.id.name); //on créer les zones ou l'on doit entrer les logs */
+        // on dit que si la variable user et différante de "nul" on passe a la 2nd activity
+
+       if (user != null) {
+            // User is signed in
+            Log.d(TAG, "User already logged: " + user.getUid());
+            intent = new Intent(AuthActivity.this, DoorActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        // sinon on execute nos code pour le login
+
+        loginButton = (Button) findViewById(R.id.log_button);
+        editLogin = (EditText) findViewById(R.id.name);
         editPass = (EditText) findViewById(R.id.passe);
-        loginButton = (Button) findViewById(R.id.button3); //création du bouton */
 
-        mAuth = FirebaseAuth.getInstance();
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // on rentre dans l'execution du bouton
 
-                login = editLogin.getText().toString();
+                login = editLogin.getText().toString(); // on tranforme le text en string
                 pass = editPass.getText().toString();
                 //idem pour le pass
-                if(login.isEmpty() || pass.isEmpty()){
-                    Log.i("MABITE", "Les champs sont vide !!");
-                }else {
+                if (login.isEmpty() || pass.isEmpty()) {
+                    Log.i("Lockthedoor", "Les champs sont vide !!");
+                } else {
                     //Demande au service Auth de firebase si l'email et le mot de passe match avec un utilisateur
-                    mAuth.signInWithEmailAndPassword(login, pass)
+                    mFirebaseAuth.signInWithEmailAndPassword(login, pass)
                             .addOnCompleteListener(AuthActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
@@ -68,25 +82,32 @@ public class AuthActivity extends AppCompatActivity{
                                     // signed in user can be handled in the listener.
                                     if (!task.isSuccessful()) {
                                         Log.w(TAG, "signInWithEmail:failed", task.getException());
-                                        Toast myToast = Toast.makeText(AuthActivity.this, "t'es pas connecté Conard !", Toast.LENGTH_LONG);
+                                        Toast myToast = Toast.makeText(AuthActivity.this, "t'es pas connecté  !", Toast.LENGTH_LONG);
                                         myToast.setGravity(Gravity.CENTER, 0, 0);
                                         myToast.show();
                                     }
                                     else {
                                         //email & pass OK
-                                        intent = new Intent(AuthActivity.this, MainActivity.class); // création de l'intent qui permet de lier les deux activités */
+
+                                        //SI j'ai l'id User ( Firebase Auth ) dans ma table users
+                                        //ALORS tout va bien et on charge l'activité suivante
+                                        //SINON Envoyer vers un Formulaire ( Activité ) qui demandera l'autorisation et le status de l'utilsateur
+                                        //Une fois le formulaire bien rempli créer l'utilisateur en base de dpnnées.
+                                        intent = new Intent(AuthActivity.this, DoorActivity.class); // création de l'intent qui permet de lier les deux activités */
                                         startActivity(intent); // ici on lance l'autre activité */
                                         Toast toToast = Toast.makeText(AuthActivity.this, "Connection Réussi tu va pouvoir entrée !", Toast.LENGTH_LONG);
                                         toToast.setGravity(Gravity.CENTER, 0, 0);
                                         toToast.show();
-
+                                        finish();
                                     }
-                                    // ...
+
                                 }
+
                             });
                 }
 
             }
         });
+
     }
 }
