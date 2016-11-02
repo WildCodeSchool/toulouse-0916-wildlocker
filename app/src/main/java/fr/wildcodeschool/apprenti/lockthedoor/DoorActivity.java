@@ -82,13 +82,15 @@ public class DoorActivity extends AppCompatActivity {
         });
 
     /*************************/
-    /* Disconnecting Button */  
+    /* Disconnecting Button */
    /************************/
 
         logoutbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //logOut firebase
                 FirebaseAuth.getInstance().signOut();
+                // Redirection vers AuthActivity
                 intent = new Intent(DoorActivity.this, AuthActivity.class); // lien entre la door activity et l'auth */
                 startActivity(intent); // retour à l'AuthActivity */
                 Toast toToast = Toast.makeText(DoorActivity.this, "Déconnecté", Toast.LENGTH_LONG);
