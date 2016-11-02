@@ -17,7 +17,6 @@
         android:textOn=""
         android:textOff=""
         android:background="@drawable/my_button_toggle"
-        android:layout_marginBottom="56dp"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 

@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2016.
+ * Created by Alban DELATTRE, Edwin RIBEIRO, Arthur DEVAUX, Lucas SUCHET.
+ */
+
 package fr.wildcodeschool.apprenti.lockthedoor;
 
 
@@ -15,8 +20,6 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -34,13 +37,13 @@ public class DoorActivity extends AppCompatActivity {
     private FirebaseUser user;
     private Intent intent;
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         mFirebaseAuth = FirebaseAuth.getInstance();
         user = mFirebaseAuth.getCurrentUser();
+
 
         //Police
         TextView title = (TextView) findViewById(R.id.textView);
@@ -50,24 +53,28 @@ public class DoorActivity extends AppCompatActivity {
         wcs.setTypeface(typeface);
 
 
+
+
+
         if (user == null) {
             Intent intent = new Intent(this, AuthActivity.class);
             startActivity(intent);
             finish();
         }
-      /*************************************************/
+
+        /*************************************************/
      /*     Define a Toggle Button for switch Led     */
-    /*************************************************/
+        /*************************************************/
 
         ToggleButton led = (ToggleButton) findViewById(R.id.Led);
         Button logoutbutton = (Button) findViewById(R.id.logout_button);
 
 
-        /***************************************************************************/
-       /*               Set a CheckChange listener for the button                 */
-      /* If checked led2 is ON  and led1 is off / else led2 is OFF and led1 is ON*/
-     /*          led1 is RED (oor closed) / led2 is GREEN (door open)           */
-     /**************************************************************************/
+
+
+        /*******************************************************/
+         /*  Set an onclick/onchange listener for every button  */
+        /*******************************************************/
 
         led.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -81,9 +88,10 @@ public class DoorActivity extends AppCompatActivity {
             }
         });
 
-    /*************************/
-    /* Disconnecting Button */
-   /************************/
+
+        /*************************/
+         /* Disconnecting Button */
+        /************************/
 
         logoutbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,17 +109,23 @@ public class DoorActivity extends AppCompatActivity {
 
     }
 
-        /*****************************************************/
+    /*****************************************************/
        /*  This is a background process for connecting      */
       /*   to the Raspberry Pi server and sending          */
      /*     the GET request with the added data           */
     /*****************************************************/
 
+
+
+    // Connection Raspberry
+
     private class Background_get extends AsyncTask<String, Void, String> {
         @Override
         protected String doInBackground(String... params) {
             try {
-                /* Change the IP to the RaspberryPi's IP */
+
+
+                /* Change the IP to the IP you set in the arduino sketch */
                 URL url = new URL("http://192.168.1.30/?" + params[0]);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 

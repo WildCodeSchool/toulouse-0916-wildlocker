@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2016.
+ * Created by Alban DELATTRE, Edwin RIBEIRO, Arthur DEVAUX, Lucas SUCHET.
+ */
+
 package fr.wildcodeschool.apprenti.lockthedoor;
 
 /**
