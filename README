@@ -1,0 +1,12 @@
+README
+LockTheDoor
+Presentation:
+Lock The Door is the application of the Wild Code School, allows to have control over the opening and closing of the doors. For all schools with the appropriate device.
+Students, teachers and guests will be able, via their smartphone, open the door without keys.
+To the unlocking page, you need to login.
+Students and formers will only have access to the school they depend.
+The administrator may have access to all permissions and all doors.
+The administrator need to register you on the database and communicate your login.
+You can use this application from a Kit-Kat ( 4.0 ) Android version or more.
+Licence:
+This project is licensed under the MIT Open Source license. For more information, see the LICENSE file in this repository.

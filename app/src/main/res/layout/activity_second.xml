@@ -6,40 +6,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#FFF">
+    android:background="@drawable/page2">
 
 
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="LOCK"
-        android:id="@+id/button"
-        android:layout_marginLeft="30dp"
-        android:background="#FF0005"
-        android:textColor="#FFFEFE"
-        android:layout_marginTop="39dp"
-        android:layout_below="@+id/imageView"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="UNLOCK"
-        android:id="@+id/button2"
-        android:layout_marginRight="30dp"
-        android:textColor="#FFFEFE"
-        android:background="#00BF03"
-        android:layout_alignTop="@+id/button"
-        android:layout_alignEnd="@+id/textView" />
-
-    <ImageView
+    <ToggleButton
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/imageView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:src="@drawable/logo_fondblanc"/>
+        android:id="@+id/Led"
+        android:layout_gravity="center"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/my_button_toggle"
+        android:layout_marginBottom="56dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,15 +31,28 @@
         android:id="@+id/textView"
         android:layout_marginTop="50dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wild Code School"
-        android:textSize="15dp"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:id="@+id/textView2"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se déconnecter"
+        android:id="@+id/logout_button"
+        android:background="@drawable/mybutton"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
