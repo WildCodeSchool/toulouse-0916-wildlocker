@@ -8,18 +8,119 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="fr.wildcodeschool.apprenti.lockthedoor.Profil_user">
-    <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="match_parent">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="150dp"
-        android:layout_height="match_parent">
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profil"
+        android:id="@+id/Profil"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:layout_marginBottom="40dp"/>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:id="@+id/textLay"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Profil">
+
+        <TextView
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom :"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            />
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prénom :"
+            android:textAlignment="center"
+            android:layout_below="@+id/lastName"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+             />
+
+        <TextView
+            android:id="@+id/school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ecole :"
+            android:textAlignment="center"
+            android:layout_below="@+id/firstName"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+             />
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Droit :"
+            android:textAlignment="center"
+            android:layout_below="@+id/school"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Profil">
+
+        <EditText
+            android:layout_alignParentStart="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:textAlignment="center"
+            android:id="@+id/editTextLN"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:textAlignment="center"
+            android:layout_below="@+id/editTextLN"
+            android:id="@+id/editTextFN"
+            android:ems="10"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextFN"
+
+            />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerS"
+            android:id="@+id/spinnerR"
+           />
     </RelativeLayout>
 
 </RelativeLayout>
