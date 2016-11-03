@@ -18,7 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".DoorActivity" />
-        <activity android:name=".AdminActivity"></activity>
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".Create_User" />
+        <activity android:name=".Profil_user"></activity>
     </application>
 
 </manifest>

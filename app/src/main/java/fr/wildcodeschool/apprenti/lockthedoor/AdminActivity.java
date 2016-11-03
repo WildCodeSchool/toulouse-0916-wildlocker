@@ -30,7 +30,7 @@ public class AdminActivity extends AppCompatActivity {
     private DatabaseReference dataroot = FirebaseDatabase.getInstance().getReference();
     private Button logoutbutton;
     private ArrayList<School> schools;
-
+    private Button crateuser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,7 @@ public class AdminActivity extends AppCompatActivity {
         TextView title = (TextView) findViewById(R.id.titleAdmin);
         Typeface typeface = Typeface.createFromAsset(getAssets(),"Stroke-Bold.otf");
         title.setTypeface(typeface);
-
+        crateuser = (Button) findViewById(R.id.User);
         // on instancie le button
         logoutbutton = (Button) findViewById(R.id.logout_button);
         // on instancie l'Arraylist
@@ -94,7 +94,16 @@ public class AdminActivity extends AppCompatActivity {
                 Toast toToast = Toast.makeText(AdminActivity.this, "Déconnecté", Toast.LENGTH_LONG);
                 toToast.setGravity(Gravity.CENTER, 0, 0);
                 toToast.show();
-                finish();            }
+                finish();
+            }
+        });
+        crateuser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent = new Intent(AdminActivity.this, Create_User.class);
+                startActivity(intent);
+                finish();
+            }
         });
     }
 
