@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 #README
 
 #SmartDoor
 
 ##Presentation:
 
+=======
+README
+Smart Door
+Presentation:
+>>>>>>> 31fc65b23951bafc5c71558cab0ef8792b0884a2
 Smart Door is a Wild Code School application, allowing you to open and close doors through your Android Device. 
 
 Students, trainers and guests will be able, through their Android Device to open the school door without keys.
@@ -11,6 +17,10 @@ The doors are protected by a login access.
 Students and trainers will have access only to the school they are assigned.
 The administrator may have access to all permissions and all doors.
 
+<<<<<<< HEAD
 ##Licence:
 
+=======
+Licence:
+>>>>>>> 31fc65b23951bafc5c71558cab0ef8792b0884a2
 This project is under the MIT Open Source licence. For more information, see the LICENSE file in this repository.
